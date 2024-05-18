@@ -1,8 +1,6 @@
 import os
 import telebot
 from telebot import types
-import time, asyncio
-from pyrogram import Client, filters
 
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
