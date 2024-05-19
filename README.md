@@ -12,6 +12,10 @@ Create new environmnet:
 python -m venv env
 ```
 \
+Install packages:
+```bash
+pip isntall -r requirements.txt
+```
 Export your API token: 
 ```bash
 export BOT_TOKEN=YOUR_BOT_TOKEN
