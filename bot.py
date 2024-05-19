@@ -1,7 +1,6 @@
 import os
 import time
 import telebot
-from telebot import types
 from video_loader import Download
 
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
