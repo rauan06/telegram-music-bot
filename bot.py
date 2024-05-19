@@ -13,7 +13,7 @@ bot = telebot.TeleBot(BOT_TOKEN)
 def send_welcome(message):
     sent_message = bot.reply_to(message, """\
 Usage: 
-/download link
+/download youtube_link
 """)
     time.sleep(5)
     try:
