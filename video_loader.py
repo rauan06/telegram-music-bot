@@ -1,6 +1,5 @@
 import os
 from pytube import YouTube
-from moviepy.editor import AudioFileClip
 
 def Download(link):
     # Initialize YouTube object
@@ -12,20 +11,11 @@ def Download(link):
     try:
         # Download audio file
         download_path = audio_stream.download()
-        
-        # Convert downloaded file to MP3 using moviepy
         base, ext = os.path.splitext(download_path)
-        mp3_path = base + '.mp3'
+        new_file = base + '.mp3'
+        os.rename(download_path, new_file)
         
-        # Load the audio file
-        audio_clip = AudioFileClip(download_path)
-        audio_clip.write_audiofile(mp3_path)
-        audio_clip.close()
-        
-        # Remove the original downloaded file
-        os.remove(download_path)
-        
-        return mp3_path
+        return new_file
     except Exception as e:
         return 1
 
