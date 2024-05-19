@@ -1,6 +1,6 @@
 # Telegram music bot
 # Usage:
-Create your bot token from https://t.me/BotFather \
+Take your bot token from https://t.me/BotFather \
 \
 Clone this repo: 
 ```bash
