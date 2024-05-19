@@ -17,7 +17,7 @@ def Download(link):
         
         return new_file
     except Exception as e:
-        return 1
+        return False
 
 if __name__ == "__main__":
     link = input("Enter the YouTube video URL: ")
