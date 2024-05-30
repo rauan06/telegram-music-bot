@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  postgres:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_DB: "bot_db"
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "12345"
+    ports:
+      - "5432:5432"
+      
+# docker run --name music_rauan06_bot_-pg -p 5432:5432 -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=12345 -e POSTGRES_DB=bot_db -d postgres
