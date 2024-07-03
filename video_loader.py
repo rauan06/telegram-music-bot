@@ -1,5 +1,13 @@
 import os
 from pytube import YouTube
+from pytube import Search
+
+def SearchQuery(query):
+    s = Search(query)
+
+    for item in s:
+        print(item.title + " - " + item.author)
+        print()
 
 def Download(link):
     # Initialize YouTube object
